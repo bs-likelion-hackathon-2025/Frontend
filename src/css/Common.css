@@ -16,7 +16,7 @@
   flex-direction: column;
   gap: 12px;
   text-align: center;
-  margin-top: 13rem;
+  margin-top: 12rem;
 }
 
 /*  Buttons */
@@ -26,12 +26,13 @@ button {
   justify-content: center;
   align-items: center;
   border: none;
-  border-radius: 8px;
+  border-radius: 25px;
   height: 48px;
   cursor: pointer;
   background-color: #f7d685;
   margin-top: auto;
   margin-bottom: 2rem;
+  color: black;
 }
 
 .btn-sm {
