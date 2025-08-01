@@ -1,0 +1,87 @@
+.app {
+  width: 100%;
+  max-width: 425px;
+  min-height: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.textGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: center;
+  margin-top: 13rem;
+}
+
+/*  Buttons */
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 2vw;
+  height: 7vh;
+  cursor: pointer;
+  background-color: #f7d685;
+  margin-top: auto;
+  margin-bottom: 2rem;
+}
+
+.btn-sm {
+  padding: 8px 16px;
+  font-size: 14px;
+}
+
+.btn-md {
+  padding: 12px 24px;
+  font-size: 16px;
+}
+
+.btn-lg {
+  width: 80%;
+  padding: 16px 32px;
+  font-size: 18px;
+} /* 씀 */
+
+/*  Typography  */
+.text-sm {
+  font-size: 13px;
+} /* 씀 */
+
+.text-base {
+  font-size: 16px;
+}
+
+.text-lg {
+  font-size: 18px;
+}
+
+.text-xl {
+  font-size: 20px;
+}
+
+.text-2xl {
+  font-size: 24px;
+}
+
+.text-3xl {
+  font-size: 28px;
+}
+
+.text-4xl {
+  font-size: 32px;
+} /* 씀 */
+.text-bold {
+  font-weight: bold;
+} /* 씀 */
+
+.text-gray {
+  color: #cbbcbc;
+} /* 씀 */
