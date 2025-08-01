@@ -4,8 +4,8 @@ import menubar from "../../assets/images/menubar.png";
 function Header() {
   return (
     <header className="header">
-      <img className="logo" src={PitstopLogo} />
-      <img className="menuIcon" src={menubar} />
+      <img className="logo" src={PitstopLogo} alt="Pitstop logo" />
+      <img className="menuIcon" src={menubar} alt="Navigation menu" />
     </header>
   );
 }

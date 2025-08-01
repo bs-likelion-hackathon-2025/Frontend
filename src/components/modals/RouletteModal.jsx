@@ -3,7 +3,7 @@ function RouletteModal({ onClose }) {
   return (
     <div className="modalWrapper">
       <div className="modal">
-        <button className="modalClose text-2xl" onClick={onClose}>
+        <button className="modalClose text-2xl" onClick={onClose} type="button">
           x
         </button>
         <div className="modalText">
