@@ -10,7 +10,7 @@ function StartPage() {
   return (
     <AppWrapper>
       <div className="app">
-        <div class="textGroup">
+        <div className="textGroup">
           <span className="text-4xl text-bold">
             천안의 이야기들이 <br />
             인자 시작되는 겨!

@@ -26,8 +26,8 @@ button {
   justify-content: center;
   align-items: center;
   border: none;
-  border-radius: 2vw;
-  height: 7vh;
+  border-radius: 8px;
+  height: 48px;
   cursor: pointer;
   background-color: #f7d685;
   margin-top: auto;
