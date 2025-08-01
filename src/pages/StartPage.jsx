@@ -1,4 +1,4 @@
-import "../css/Common.css";
+import "../css/StartPage.css";
 import AppWrapper from "../components/common/AppWrapper";
 import { useNavigate } from "react-router-dom";
 function StartPage() {
