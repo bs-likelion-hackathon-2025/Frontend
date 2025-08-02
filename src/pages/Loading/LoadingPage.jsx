@@ -5,7 +5,7 @@ import "../../css/Common.css";
 import "../../css/Button.css";
 import ProjectLogo from "../../assets/images/ProjectLogo.svg";
 import PitstopLogo from "../../assets/images/PitstopLogo.svg";
-function LoadingPage1() {
+function LoadingPage() {
   const navigate = useNavigate();
 
   const handleNext = () => {
@@ -16,7 +16,7 @@ function LoadingPage1() {
       <div className="app">
         <img className="pitstopLogo" src={PitstopLogo} />
         <img className="ProjectLogo" src={ProjectLogo} />
-        <button className="btn-lg font-base text-bold " onClick={handleNext}>
+        <button className="btn-lg text-base text-bold " onClick={handleNext}>
           다음
         </button>
       </div>
@@ -24,4 +24,4 @@ function LoadingPage1() {
   );
 }
 
-export default LoadingPage1;
+export default LoadingPage;

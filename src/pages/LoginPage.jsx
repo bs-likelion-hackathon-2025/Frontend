@@ -3,9 +3,11 @@ import "../css/Text.css";
 import "../css/Common.css";
 import loginBtn from "../assets/images/loginBtn.svg";
 import ProjectLogo from "../assets/images/ProjectLogo.svg";
-function StartPage() {
+function LoginPage() {
   const handleKakaoLogin = () => {
-    window.location.href = "http://43.201.81.83/oauth2/authorization/kakao";
+    window.location.href = `${
+      import.meta.env.VITE_API_BASE_URL
+    }/oauth2/authorization/kakao`;
   };
   return (
     <div className="appWrapper">
@@ -26,4 +28,4 @@ function StartPage() {
   );
 }
 
-export default StartPage;
+export default LoginPage;

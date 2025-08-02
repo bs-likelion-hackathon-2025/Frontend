@@ -26,7 +26,7 @@ function LoadingPage2() {
           </span>
         </div>
         <img className="ProjectLogo" src={ProjectLogo} />
-        <button className="btn-lg font-base text-bold " onClick={handleNext}>
+        <button className="btn-lg text-base text-bold " onClick={handleNext}>
           다음
         </button>
       </div>
