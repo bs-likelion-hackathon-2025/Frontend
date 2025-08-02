@@ -3,12 +3,18 @@ import "../css/Text.css";
 import "../css/Common.css";
 import loginBtn from "../assets/images/loginBtn.svg";
 import ProjectLogo from "../assets/images/ProjectLogo.svg";
+import { useNavigate } from "react-router-dom";
 function LoginPage() {
+  const navigate = useNavigate();
   const handleKakaoLogin = () => {
     window.location.href = `${
       import.meta.env.VITE_API_BASE_URL
     }/oauth2/authorization/kakao`;
   };
+  const handleGoHome = () => {
+    navigate("/home");
+  };
+
   return (
     <div className="appWrapper">
       <div className="app">
@@ -23,6 +29,7 @@ function LoginPage() {
         </div>
         <img className="ProjectLogo" src={ProjectLogo} />
         <img className="kakaoLogin" src={loginBtn} onClick={handleKakaoLogin} />
+        <button onClick={handleGoHome}>go</button>
       </div>
     </div>
   );

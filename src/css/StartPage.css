@@ -3,17 +3,18 @@
   flex-direction: column;
   gap: 5px;
   text-align: center;
-  margin-top: 12rem;
+  margin-top: 6.85rem;
 }
 .pitstopLogo {
-  width: 410px;
+  width: 300px;
+  margin-top: auto;
 }
-.ProjectLogo {
-  margin-top: 7rem;
+.ProjectLogo{
+  margin-top: 12rem;
 }
 .kakaoLogin {
   cursor: pointer;
-  margin-bottom: 1rem;
+  padding: 3px 32px;
 }
 .text-3xl {
   color: #421c00;

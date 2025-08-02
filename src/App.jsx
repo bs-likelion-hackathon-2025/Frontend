@@ -7,7 +7,6 @@ import Home from "./pages/Home";
 import LoadingPage from "./pages/Loading/LoadingPage";
 import LoadingPage1 from "./pages/Loading/LoadingPage1";
 import LoadingPage2 from "./pages/Loading/LoadingPage2";
-import LoadingPage3 from "./pages/Loading/LoadingPage3";
 
 function App() {
   return (
@@ -15,8 +14,7 @@ function App() {
       <Route path="/" element={<LoadingPage />} />
       <Route path="/loadingPage1" element={<LoadingPage1 />} />
       <Route path="/loadingPage2" element={<LoadingPage2 />} />
-      <Route path="/loadingPage3" element={<LoadingPage3 />} />
-      <Route path="/loadingPage4" element={<LoginPage />} />
+      <Route path="/loadingPage3" element={<LoginPage />} />
       <Route element={<Layout />}>
         <Route path="/home" element={<Home />} />
         <Route path="/ai-chat" element={<AiChat />} />
