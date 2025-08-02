@@ -1,17 +1,28 @@
 .textGroup {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 5px;
   text-align: center;
   margin-top: 12rem;
 }
-
+.pitstopLogo {
+  width: 410px;
+}
+.ProjectLogo {
+  margin-top: 7rem;
+}
 .kakaoLogin {
   cursor: pointer;
-  margin-top: auto;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
-.text-4xl {
+.text-3xl {
   color: #421c00;
   line-height: 1.2;
+}
+.btn-lg {
+  background-color: #d6664d;
+  color: white;
+}
+.text-base {
+  color: white;
 }
