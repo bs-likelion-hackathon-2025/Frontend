@@ -1,0 +1,29 @@
+import "../css/StartPage.css";
+import "../css/Text.css";
+import "../css/Common.css";
+import loginBtn from "../assets/images/loginBtn.svg";
+import ProjectLogo from "../assets/images/ProjectLogo.svg";
+function StartPage() {
+  const handleKakaoLogin = () => {
+    window.location.href = "http://43.201.81.83/oauth2/authorization/kakao";
+  };
+  return (
+    <div className="appWrapper">
+      <div className="app">
+        <div className="textGroup">
+          <span className="text-3xl text-bold">
+            여그 천안, <br />
+            이야기 한 바탕 시작해볼까?
+          </span>
+          <span className="text-base text-gray ">
+            지금, 우리 동네의 진짜 이야기를 함께 만들어보세요.
+          </span>
+        </div>
+        <img className="ProjectLogo" src={ProjectLogo} />
+        <img className="kakaoLogin" src={loginBtn} onClick={handleKakaoLogin} />
+      </div>
+    </div>
+  );
+}
+
+export default StartPage;
