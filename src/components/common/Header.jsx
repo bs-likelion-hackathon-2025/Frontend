@@ -1,11 +1,11 @@
-import "../../css/Common.css";
-import PitstopLogo from "../../assets/images/PitstopLogo.png";
+import "../../css/Layout.css";
+import PitstopLogo from "../../assets/images/PitstopLogo.svg";
 import menubar from "../../assets/images/menubar.png";
 function Header() {
   return (
     <header className="header">
-      <img className="logo" src={PitstopLogo} alt="Pitstop logo" />
-      <img className="menuIcon" src={menubar} alt="Navigation menu" />
+      <img className="logo" src={PitstopLogo} alt="Pitstoplogo" />
+      <img src={menubar} alt="Navigationmenu" />
     </header>
   );
 }

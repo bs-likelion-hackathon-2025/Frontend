@@ -1,0 +1,29 @@
+.app {
+  width: 100%;
+  max-width: 425px;
+  min-height: 100%;
+  margin: 0 auto;
+  background-color: white;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.homebg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 425px;
+  height: 450px;
+  background: linear-gradient(to bottom, #ffccc2 0%, #f7f785 100%);
+  border-bottom-left-radius: 50% 20%;
+  border-bottom-right-radius: 50% 20%;
+}
+.content {
+  padding: 70px;
+}

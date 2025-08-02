@@ -14,6 +14,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 1rem;
+  color: #332400;
 }
 .modal {
   box-sizing: border-box;
@@ -40,4 +42,5 @@
 
 .modalInfo {
   color: #acacac;
+  margin-top: 0.2rem;
 }

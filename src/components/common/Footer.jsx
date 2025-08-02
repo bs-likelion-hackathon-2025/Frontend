@@ -1,4 +1,4 @@
-import "../../css/Common.css";
+import "../../css/Layout.css";
 import cHomeLogo from "../../assets/images/c-HomeLogo.png";
 import aiChatLogo from "../../assets/images/aiChatLogo.png";
 import Community from "../../assets/images/CommunityLogo.png";

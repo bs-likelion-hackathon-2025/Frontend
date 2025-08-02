@@ -1,4 +1,4 @@
-import "../../css/modal.css";
+import "../../css/Modal.css";
 function RouletteModal({ onClose }) {
   return (
     <div className="modalWrapper">
