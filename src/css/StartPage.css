@@ -1,20 +1,17 @@
-.app {
-  width: 100%;
-  max-width: 425px;
-  min-height: 100%;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: white;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-}
 .textGroup {
   display: flex;
   flex-direction: column;
   gap: 12px;
   text-align: center;
   margin-top: 12rem;
+}
+
+.kakaoLogin {
+  cursor: pointer;
+  margin-top: auto;
+  margin-bottom: 0.5rem;
+}
+.text-4xl {
+  color: #421c00;
+  line-height: 1.2;
 }

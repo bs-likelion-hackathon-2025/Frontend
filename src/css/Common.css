@@ -1,9 +1,14 @@
+.appWrapper {
+  height: 100dvh;
+  width: 100vw;
+  overflow-y: auto;
+  background-color: rgb(227, 227, 227);
+}
 .app {
   width: 100%;
   max-width: 425px;
   min-height: 100%;
   margin: 0 auto;
-  padding: 20px;
   background-color: white;
   box-sizing: border-box;
   display: flex;
@@ -11,137 +16,6 @@
   justify-content: flex-start;
   align-items: center;
 }
-.header {
-  position: relative;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 20px;
-  width: 100%;
-  max-width: 425px;
-  height: 80px;
-  margin: 0 auto;
-  background-color: #f9de9d;
-  box-sizing: border-box;
+.main {
+  flex: 1;
 }
-
-.logo {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  height: 28px;
-}
-
-.menuIcon {
-  height: 25px;
-  padding: 15px;
-}
-
-.footer {
-  position: fixed;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-51.8%);
-  width: 100%;
-  max-width: 425px;
-  height: 80px;
-  background-color: #fbfbfb;
-  border-radius: 20px 20px 0 0;
-  border-top: 1px solid #ebebeb;
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  align-items: center;
-  padding: 0 16px;
-  box-sizing: border-box;
-  z-index: 1000;
-}
-.btnclick {
-  background-color: #eaeaea;
-}
-.footerBtn {
-  width: 64px;
-  height: 64px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 6px;
-  border: none;
-  border-radius: 15px;
-  color: #8c8c8c;
-  cursor: pointer;
-}
-
-.footerBtn img {
-  width: 24px;
-  height: 24px;
-}
-
-/*  Buttons */
-
-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: none;
-  border-radius: 25px;
-  height: 48px;
-  cursor: pointer;
-  background-color: #f7d685;
-  margin-top: auto;
-  margin-bottom: 2rem;
-  color: black;
-}
-
-.btn-sm {
-  padding: 8px 16px;
-  font-size: 14px;
-}
-
-.btn-md {
-  padding: 12px 24px;
-  font-size: 16px;
-}
-
-.btn-lg {
-  width: 80%;
-  padding: 16px 32px;
-  font-size: 18px;
-} /* 씀 */
-
-/*  Typography  */
-.text-sm {
-  font-size: 13px;
-} /* 씀 */
-
-.text-base {
-  font-size: 16px;
-}
-
-.text-lg {
-  font-size: 18px;
-}
-
-.text-xl {
-  font-size: 20px;
-}
-
-.text-2xl {
-  font-size: 24px;
-}
-
-.text-3xl {
-  font-size: 28px;
-}
-
-.text-4xl {
-  font-size: 32px;
-} /* 씀 */
-.text-bold {
-  font-weight: bold;
-} /* 씀 */
-
-.text-gray {
-  color: #cbbcbc;
-} /* 씀 */

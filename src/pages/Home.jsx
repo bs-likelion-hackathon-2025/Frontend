@@ -1,4 +1,4 @@
-import "../css/Common.css";
+import "../css/Home.css";
 import { useEffect, useState } from "react";
 import RouletteModal from "../components/modals/RouletteModal";
 function Home() {
@@ -7,10 +7,12 @@ function Home() {
     setShowModal(true);
   }, []);
   return (
-    <div className="app">
-      {" "}
+    <>
+      <div className="homebg">
+        <div className="content"></div>
+      </div>
       {showModal && <RouletteModal onClose={() => setShowModal(false)} />}
-    </div>
+    </>
   );
 }
 
