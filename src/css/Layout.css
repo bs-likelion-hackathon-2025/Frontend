@@ -17,6 +17,59 @@
   transform: translateX(-50%);
   width: 120px;
 }
+.menuScreen {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1001;
+  display: flex;
+  justify-content: flex-end;
+}
+.sidebarMenu {
+  width: 50vw;
+  max-width: 320px;
+  height: 100%;
+  background-color: white;
+  padding: 1.5rem;
+  position: relative;
+  animation: slideInRight 0.3s ease forwards;
+}
+.sidebarClose {
+  position: absolute;
+  top: 12px;
+  right: 20px;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #3d3d3d;
+}
+
+.sidebarMenu ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 7rem;
+}
+
+.sidebarMenu li {
+  font-size: 1.2rem;
+  margin: 3rem 0;
+  cursor: pointer;
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 
 .footer {
   position: sticky;
@@ -33,7 +86,6 @@
   align-items: center;
   padding: 0 16px;
   box-sizing: border-box;
-  z-index: 1000;
 }
 .btnclick {
   background-color: #eaeaea;
@@ -49,10 +101,13 @@
   border-radius: 15px;
   color: #8c8c8c;
   cursor: pointer;
-  gap:1px;
+  gap: 1px;
 }
 
 .footerBtn img {
   width: 24px;
   height: 24px;
+}
+.menuScreen ~ .footer {
+  display: none; /* 메뉴가 열리면 푸터 숨김 */
 }

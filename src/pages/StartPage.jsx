@@ -2,7 +2,7 @@ import "../css/StartPage.css";
 import "../css/Text.css";
 import "../css/Common.css";
 import { useNavigate } from "react-router-dom";
-import loginBtn from "../assets/images/loginBtn.png";
+import loginBtn from "../assets/images/loginBtn.svg";
 function StartPage() {
   const navigate = useNavigate();
   const handleStart = () => {
