@@ -19,3 +19,17 @@
 .main {
   flex: 1;
 }
+.homebg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 425px;
+  height: 100vh;
+  background: linear-gradient(to bottom, #ffcdcd 0%, #fff8c4 100%);
+}
+.content {
+  padding: 70px;
+}
