@@ -1,6 +1,10 @@
 import "../css/Common.css";
 function AiChat() {
-  return <div className="app">ai챗</div>;
+  return (
+    <div className="homebg">
+      <div className="content">챗봇</div>
+    </div>
+  );
 }
 
 export default AiChat;

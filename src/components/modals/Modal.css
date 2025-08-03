@@ -19,7 +19,7 @@
 }
 .modal {
   box-sizing: border-box;
-  background-color: #fffbf1;
+  background: linear-gradient(to bottom, #ffefeb 0%, #ffedbf 100%);
   width: 90%;
   max-width: 360px;
   height: 70vh;

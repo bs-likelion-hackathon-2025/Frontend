@@ -1,8 +1,26 @@
 import "./Modal.css";
+import "../../css/Text.css";
+import { useEffect, useRef } from "react";
+
 function RouletteModal({ onClose }) {
+  const modalRef = useRef();
+
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (modalRef.current && !modalRef.current.contains(e.target)) {
+        onClose();
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [onClose]);
+
   return (
     <div className="modalWrapper">
-      <div className="modal">
+      <div className="modal" ref={modalRef}>
         <button className="modalClose text-2xl" onClick={onClose} type="button">
           x
         </button>
