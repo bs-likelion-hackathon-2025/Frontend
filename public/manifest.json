@@ -1,0 +1,28 @@
+{
+  "name": "FitStop",
+  "short_name": "FitStop",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#FFEBB9",
+  "theme_color": "#EF776A",
+  "icons": [
+    {
+      "src": "/appLogo.png",
+      "sizes": "572x572",
+      "type": "image/png"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/appLogo.png",
+      "type": "image/png",
+      "sizes": "1280x720",
+      "form_factor": "wide"
+    },
+    {
+      "src": "/appLogo.png",
+      "type": "image/png",
+      "sizes": "390x844"
+    }
+  ]
+}
