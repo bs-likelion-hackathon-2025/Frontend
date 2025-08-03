@@ -75,7 +75,7 @@
   height: 29px;
 }
 .info {
-  height: 110vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -86,7 +86,7 @@
   bottom: 0;
   width: 100%;
   max-width: 425px;
-  height: 80px;
+  height: 70px;
   background-color: #fbfbfb;
   border-radius: 40px 40px 0 0;
   border: inset 1px solid #ebebeb;
