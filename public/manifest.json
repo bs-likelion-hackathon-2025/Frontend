@@ -1,6 +1,6 @@
 {
-  "name": "My App",
-  "short_name": "MyApp",
+  "name": "FitStop",
+  "short_name": "FitStop",
   "start_url": ".",
   "display": "standalone",
   "background_color": "#FFEBB9",
@@ -16,13 +16,13 @@
     {
       "src": "/appLogo.png",
       "type": "image/png",
-      "sizes": "572x572",
+      "sizes": "1280x720",
       "form_factor": "wide"
     },
     {
       "src": "/appLogo.png",
       "type": "image/png",
-      "sizes": "572x572"
+      "sizes": "390x844"
     }
   ]
 }
