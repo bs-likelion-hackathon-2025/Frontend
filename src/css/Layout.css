@@ -75,7 +75,7 @@
   height: 29px;
 }
 .info {
-  margin-top: 26rem;
+  height: 110vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -115,9 +115,7 @@
   width: 34px;
   height: 30px;
 }
-.menuScreen ~ .footer {
-  display: none;
-}
+
 .text-sm {
   color: #cdcbcb;
 }
