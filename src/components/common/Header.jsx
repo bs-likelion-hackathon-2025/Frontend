@@ -51,7 +51,7 @@ function Header() {
                 }`}
                 onClick={() => handleMenuClick("ai-chat")}
               >
-                <img src={cate1} alt="천둥이챗봇" className="menuIcon" />
+                <img src={cate1} className="menuIcon" />
                 천둥이챗봇
               </li>
               <li
@@ -60,7 +60,7 @@ function Header() {
                 }`}
                 onClick={() => handleMenuClick("shop")}
               >
-                <img src={cate2} alt="천안도감" className="menuIcon" />
+                <img src={cate2}  className="menuIcon" />
                 천안도감
               </li>
             </ul>
