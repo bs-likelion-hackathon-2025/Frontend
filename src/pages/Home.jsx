@@ -8,10 +8,10 @@ function Home() {
   }, []);
   return (
     <>
+      {showModal && <RouletteModal onClose={() => setShowModal(false)} />}
       <div className="homebg">
         <div className="content">홈</div>
       </div>
-      {showModal && <RouletteModal onClose={() => setShowModal(false)} />}
     </>
   );
 }
