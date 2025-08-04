@@ -3,7 +3,7 @@ import "../../css/Text.css";
 import { useEffect, useRef, useState } from "react";
 import shortLogo from "../../assets/images/shortLogo.svg";
 import RouletteWheel from "./RouletteWheel";
-import RouletteResult from "./RoulletteResult";
+import RouletteResult from "./RouletteResult";
 function RouletteModal({ onClose }) {
   const modalRef = useRef();
   const [result, setResult] = useState(null);

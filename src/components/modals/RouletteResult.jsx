@@ -5,12 +5,12 @@ import roul3 from "../../assets/images/roul3.svg";
 import roul4 from "../../assets/images/roul4.svg";
 import { useNavigate } from "react-router-dom";
 const images = {
-  양식: [roul3],
-  한식: [roul2],
-  중식: [roul4],
-  일식: [roul1],
+  양식: roul3,
+  한식: roul2,
+  중식: roul4,
+  일식: roul1,
 };
-function RoulletteResult({ result, onClose }) {
+function RouletteResult({ result, onClose }) {
   const navigate = useNavigate();
 
   const handleAskAi = () => {
@@ -39,4 +39,4 @@ function RoulletteResult({ result, onClose }) {
     </div>
   );
 }
-export default RoulletteResult;
+export default RouletteResult;

@@ -81,7 +81,7 @@
   flex-direction: row;
   gap: 1rem;
 }
-button {
+.resultButtons button  {
   border: 2px solid #ef776a;
   border-radius: 30px;
   background-color: white;
