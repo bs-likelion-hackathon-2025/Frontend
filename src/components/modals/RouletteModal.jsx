@@ -1,10 +1,12 @@
 import "./Modal.css";
 import "../../css/Text.css";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import shortLogo from "../../assets/images/shortLogo.svg";
+import RouletteWheel from "./RouletteWheel";
+import RouletteResult from "./RoulletteResult";
 function RouletteModal({ onClose }) {
   const modalRef = useRef();
-
+  const [result, setResult] = useState(null);
   useEffect(() => {
     const handleClickOutside = (e) => {
       if (modalRef.current && !modalRef.current.contains(e.target)) {
@@ -17,7 +19,9 @@ function RouletteModal({ onClose }) {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [onClose]);
-
+  if (result) {
+    return <RouletteResult result={result} onClose={onClose} />;
+  }
   return (
     <div className="modalWrapper">
       <div className="modal" ref={modalRef}>
@@ -32,6 +36,7 @@ function RouletteModal({ onClose }) {
             오늘 메뉴 추천 드릴게유
           </span>
         </div>
+        <RouletteWheel onResult={(result) => setResult(result)} />
       </div>
     </div>
   );
