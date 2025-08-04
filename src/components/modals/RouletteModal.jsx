@@ -2,8 +2,6 @@ import "./Modal.css";
 import "../../css/Text.css";
 import { useEffect, useRef } from "react";
 import shortLogo from "../../assets/images/shortLogo.svg";
-<link href="https://cdn.jsdelivr.net/gh/webfontworld/BMEuljiro/BMEuljiro.css" rel="stylesheet"></link>
-
 function RouletteModal({ onClose }) {
   const modalRef = useRef();
 
@@ -27,8 +25,12 @@ function RouletteModal({ onClose }) {
           x
         </button>
         <div className="modalText">
-          <img src={shortLogo}/>
-          <span className=" text-2xl ">고민은 짧게, 선택은 랜덤으로!<br/>오늘 메뉴 추천 드릴게유</span>
+          <img src={shortLogo} />
+          <span className=" text-2xl ">
+            고민은 짧게, 선택은 랜덤으로!
+            <br />
+            오늘 메뉴 추천 드릴게유
+          </span>
         </div>
       </div>
     </div>

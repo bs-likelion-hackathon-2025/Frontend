@@ -46,7 +46,10 @@
 }
 @font-face {
   font-family: "BM Euljiro";
-  src: url("/fonts/BMEuljiro.ttf") format("truetype");
+  src: url("/fonts/BMEuljiro.woff2") format("woff2"),
+    url("/fonts/BMEuljiro.woff") format("woff"),
+    url("/fonts/BMEuljiro.ttf") format("truetype");
+  font-display: swap;
   font-weight: normal;
   font-style: normal;
 }
