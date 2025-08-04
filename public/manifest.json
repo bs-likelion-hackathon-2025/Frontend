@@ -3,8 +3,8 @@
   "short_name": "오늘 뭐 땡겨유?",
   "start_url": ".",
   "display": "standalone",
-  "background_color": "#FFB600",
-  "theme_color": "#FFB600",
+  "background_color": "#FFEBB9",
+  "theme_color": "#FFEBB9",
   "icons": [
     {
       "src": "/appLogo.png",
