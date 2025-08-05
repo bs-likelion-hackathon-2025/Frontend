@@ -1,16 +1,24 @@
 import "../css/Common.css";
-import { useEffect, useState } from "react";
+import mainRoul from "../assets/images/mainRoul.svg";
+import ProjectLogo from "../assets/images/ProjectLogo.svg";
+import { useState } from "react";
 import RouletteModal from "../components/modals/RouletteModal";
+import Card from "./Card";
 function Home() {
   const [showModal, setShowModal] = useState(false);
-  useEffect(() => {
+  const handleImageClick = () => {
     setShowModal(true);
-  }, []);
+  };
   return (
     <>
-      {showModal && <RouletteModal onClose={() => setShowModal(false)} />}
       <div className="homebg">
-        <div className="content">홈</div>
+        <div className="content">
+          <img src={ProjectLogo} className="aiImg" />
+          <img src={mainRoul} onClick={handleImageClick} className="roulImg" />
+          {showModal && <RouletteModal onClose={() => setShowModal(false)} />}
+          <Card variant="weather" />
+          <Card variant="brief" />
+        </div>
       </div>
     </>
   );

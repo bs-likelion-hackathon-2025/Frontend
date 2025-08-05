@@ -1,0 +1,93 @@
+.cardWrapper {
+  width: 23rem;
+  margin: 1rem 0;
+  background: #fffbf3;
+  border-radius: 30px;
+  box-shadow: 0px 0px 11.1px rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+}
+.cardContent {
+  padding: 14px;
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  color: #877d7d;
+  margin-bottom: 10px;
+}
+.cardHeader .place {
+  font-weight: 700;
+  color: #110000;
+  display: flex;
+  gap: 0.3rem;
+}
+.cardHeader .time {
+  color: #9a9a9a;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  padding: 0 1rem;
+}
+.smallC {
+  background: #ffffff;
+  border: 1px solid #dcdcdc;
+  border-radius: 15px;
+  padding: 8px 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+.smallCIcon {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+.smallCLabel {
+  font-size: 16px;
+  color: #afafaf;
+}
+.smallCValue {
+  font-size: 16px;
+  font-weight: 700;
+  color: #190400;
+}
+.briefHeader {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 8px;
+  color: #190400;
+}
+.briefAvatar {
+  width: 30px;
+  height: 28px;
+  border-radius: 50%;
+  background: #ffffff;
+  padding: 2px;
+  border: 1px solid #ededed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.briefTexts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.briefTitle {
+  font-size: 10px;
+}
+.briefSub {
+  font-size: 16px;
+  font-weight: bold;
+}

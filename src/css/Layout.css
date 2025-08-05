@@ -82,7 +82,7 @@
   letter-spacing: -0.5px;
 }
 .footer {
-  position: sticky;
+  position: fixed;
   bottom: 0;
   width: 100%;
   max-width: 425px;
