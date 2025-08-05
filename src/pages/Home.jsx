@@ -3,7 +3,7 @@ import mainRoul from "../assets/images/mainRoul.svg";
 import ProjectLogo from "../assets/images/ProjectLogo.svg";
 import { useState } from "react";
 import RouletteModal from "../components/modals/RouletteModal";
-import Card from "../components/common/card";
+import Card from "./Card";
 function Home() {
   const [showModal, setShowModal] = useState(false);
   const handleImageClick = () => {

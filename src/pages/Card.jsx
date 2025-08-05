@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
-import "../../css/card.css";
-import smallCIcon1 from "../../assets/images/smallCIcon1.svg";
-import smallCIcon2 from "../../assets/images/smallCIcon2.svg";
-import smallCIcon3 from "../../assets/images/smallCIcon3.svg";
-import ProjectLogo from "../../assets/images/ProjectLogo.svg";
-import cardLocation from "../../assets/images/cardLocation.svg";
-import instance from "../../utils/axios";
+import "../css/card.css";
+import smallCIcon1 from "../assets/images/smallCIcon1.svg";
+import smallCIcon2 from "../assets/images/smallCIcon2.svg";
+import smallCIcon3 from "../assets/images/smallCIcon3.svg";
+import ProjectLogo from "../assets/images/ProjectLogo.svg";
+import cardLocation from "../assets/images/cardLocation.svg";
+import instance from "../utils/axios";
 
 const DEFAULT_COORDS = { lat: 36.84, lon: 127.185 };
 
@@ -13,7 +13,7 @@ function Card({ variant = "weather" }) {
   const OWM_KEY = import.meta.env.VITE_OWM_API_KEY;
 
   const [loading, setLoading] = useState(variant === "weather");
-  const [place, setPlace] = useState("천안시 안서동");
+  const [place, setPlace] = useState("현재 위치 없음");
   const [timeText, setTimeText] = useState("");
   const [tempC, setTempC] = useState(null);
   const [weatherLabel, setWeatherLabel] = useState("-");
@@ -100,7 +100,7 @@ function Card({ variant = "weather" }) {
     } else {
       GetWeather(DEFAULT_COORDS.lat, DEFAULT_COORDS.lon);
     }
-  });
+  }, [variant]);
   useEffect(() => {
     const tick = () => setTimeText(nowText());
     tick();
@@ -117,7 +117,6 @@ function Card({ variant = "weather" }) {
                 <img src={cardLocation} />
                 {place}
               </span>
-              <span className="sep">•</span>
               <span className="time">{timeText}</span>
             </div>
 

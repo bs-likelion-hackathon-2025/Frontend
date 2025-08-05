@@ -16,15 +16,13 @@
   justify-content: space-between;
   padding: 0 1rem;
   color: #877d7d;
-  font-size: 1px;
   margin-bottom: 10px;
 }
 .cardHeader .place {
   font-weight: 700;
   color: #110000;
-}
-.cardHeader .sep {
-  opacity: 0.6;
+  display: flex;
+  gap: 0.3rem;
 }
 .cardHeader .time {
   color: #9a9a9a;
